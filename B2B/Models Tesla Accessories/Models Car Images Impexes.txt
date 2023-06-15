@@ -1,0 +1,84 @@
+----------------------
+Model S Car Images
+----------------------
+
+$contentCatalog=powertoolsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+$picture=media(code, $contentCV);
+$siteResource=jar:de.hybris.platform.powertoolsstore.constants.PowertoolsStoreConstants&/powertoolsstore/import/sampledata/contentCatalogs/$contentCatalog
+$medias=medias(code, $contentCV);
+$mediaContainer=media(qualifier, $contentCV)[lang=$lang];
+
+
+# Language
+$lang=en
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];realfilename;altText;mime[default='image/jpeg'];$contentCV[unique=true];folder(qualifier)[default=images];
+;desktop;Powertools_240x200_PowerDrills_EN_01_240W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_240x200_PowerDrills_EN_01_240W.jpg;Powertools_240x200_PowerDrills_EN_01_240W.jpg;"Model S";
+;mobile;Powertools_320x260_PowerDrills_EN_01_320W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_320x260_PowerDrills_EN_01_320W.jpg;Powertools_320x260_PowerDrills_EN_01_320W.jpg;"Model S";
+;tablet;Powertools_385x290_PowerDrills_EN_01_385W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_385x290_PowerDrills_EN_01_385W.jpg;Powertools_385x290_PowerDrills_EN_01_385W.jpg;"Model S";
+;widescreen;Powertools_350x290_PowerDrills_EN_01_350W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_350x290_PowerDrills_EN_01_350W.jpg;Powertools_350x290_PowerDrills_EN_01_350W.jpg;"Model S";
+
+----------------------
+Model 3 Car Images
+----------------------
+
+$contentCatalog=powertoolsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+$picture=media(code, $contentCV);
+$siteResource=jar:de.hybris.platform.powertoolsstore.constants.PowertoolsStoreConstants&/powertoolsstore/import/sampledata/contentCatalogs/$contentCatalog
+$medias=medias(code, $contentCV);
+$mediaContainer=media(qualifier, $contentCV)[lang=$lang];
+
+
+# Language
+$lang=en
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];realfilename;altText;mime[default='image/jpeg'];$contentCV[unique=true];folder(qualifier)[default=images];
+;desktop;Powertools_240x200_AngleGrinders_EN_01_240W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_240x200_AngleGrinders_EN_01_240W.jpg;Powertools_240x200_AngleGrinders_EN_01_240W.jpg;"Model 3";
+;mobile;Powertools_320x260_AngleGrinders_EN_01_320W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_320x260_AngleGrinders_EN_01_320W.jpg;Powertools_320x260_AngleGrinders_EN_01_320W.jpg;"Model 3";
+;widescreen;Powertools_350x290_AngleGrinders_EN_01_350W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_350x290_AngleGrinders_EN_01_350W.jpg;Powertools_350x290_AngleGrinders_EN_01_350W.jpg;"Model 3";
+;tablet;Powertools_385x290_AngleGrinders_EN_01_385W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_385x290_AngleGrinders_EN_01_385W.jpg;Powertools_385x290_AngleGrinders_EN_01_385W.jpg;"Model 3";
+
+
+----------------------
+Model X Car Images
+----------------------
+
+$contentCatalog=powertoolsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+$picture=media(code, $contentCV);
+$siteResource=jar:de.hybris.platform.powertoolsstore.constants.PowertoolsStoreConstants&/powertoolsstore/import/sampledata/contentCatalogs/$contentCatalog
+$medias=medias(code, $contentCV);
+$mediaContainer=media(qualifier, $contentCV)[lang=$lang];
+
+
+# Language
+$lang=en
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];realfilename;altText;mime[default='image/jpeg'];$contentCV[unique=true];folder(qualifier)[default=images];
+;desktop;Powertools_240x200_Screwdrivers_EN_01_240W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_240x200_Screwdrivers_EN_01_240W.jpg;Powertools_240x200_Screwdrivers_EN_01_240W.jpg;"Model X";
+;mobile;Powertools_320x260_Screwdrivers_EN_01_320W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_320x260_Screwdrivers_EN_01_320W.jpg;Powertools_320x260_Screwdrivers_EN_01_320W.jpg;"Model X";
+;widescreen;Powertools_350x290_Screwdrivers_EN_01_350W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_350x290_Screwdrivers_EN_01_350W.jpg;Powertools_350x290_Screwdrivers_EN_01_350W.jpg;"Model X";
+;tablet;Powertools_385x290_Screwdrivers_EN_01_385W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_385x290_Screwdrivers_EN_01_385W.jpg;Powertools_385x290_Screwdrivers_EN_01_385W.jpg;"Model X";
+
+----------------------
+Model Y Car Images
+----------------------
+
+$contentCatalog=powertoolsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+$picture=media(code, $contentCV);
+$siteResource=jar:de.hybris.platform.powertoolsstore.constants.PowertoolsStoreConstants&/powertoolsstore/import/sampledata/contentCatalogs/$contentCatalog
+$medias=medias(code, $contentCV);
+$mediaContainer=media(qualifier, $contentCV)[lang=$lang];
+
+
+# Language
+$lang=en
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];realfilename;altText;mime[default='image/jpeg'];$contentCV[unique=true];folder(qualifier)[default=images];
+;desktop;Powertools_240x200_Sanders_EN_01_240W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_240x200_Sanders_EN_01_240W.jpg;Powertools_240x200_Sanders_EN_01_240W.jpg;"Model Y";
+;mobile;Powertools_320x260_Sanders_EN_01_320W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_320x260_Sanders_EN_01_320W.jpg;Powertools_320x260_Sanders_EN_01_320W.jpg;"Model Y";
+;widescreen;Powertools_350x290_Sanders_EN_01_350W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_350x290_Sanders_EN_01_350W.jpg;Powertools_350x290_Sanders_EN_01_350W.jpg;"Model Y";
+;tablet;Powertools_385x290_Sanders_EN_01_385W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_385x290_Sanders_EN_01_385W.jpg;Powertools_385x290_Sanders_EN_01_385W.jpg;"Model Y";
+

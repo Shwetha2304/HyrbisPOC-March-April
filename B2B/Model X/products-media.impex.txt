@@ -1,0 +1,62 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+# ImPex for Importing Product Media into Powertools Store
+
+# Macros / Replacement Parameter definitions
+$productCatalog=powertoolsProductCatalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$siteResource=jar:de.hybris.platform.powertoolsstore.constants.PowertoolsStoreConstants&/powertoolsstore/import/sampledata/productCatalogs/$productCatalog
+$thumbnail=thumbnail(code, $catalogVersion)
+$picture=picture(code, $catalogVersion)
+$thumbnails=thumbnails(code, $catalogVersion)
+$detail=detail(code, $catalogVersion)
+$normal=normal(code, $catalogVersion)
+$others=others(code, $catalogVersion)
+$data_sheet=data_sheet(code, $catalogVersion)
+$medias=medias(code, $catalogVersion)
+$galleryImages=galleryImages(qualifier, $catalogVersion)
+
+INSERT_UPDATE MediaFolder;qualifier[unique=true];path[unique=true]
+;images;images
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];$catalogVersion;folder(qualifier)[default=images]
+;1200Wx1200H;/1200Wx1200H/4598185-5054.jpg;$siteResource/images/1200Wx1200H/4598185-5054.jpg
+300Wx1200H;/300Wx1200H/4598185-5054.jpg;$siteResource/images/300Wx300H/4598185-5054.jpg
+96Wx96H;/96Wx96H/4598185-5054.jpg;$siteResource/images/96Wx96H/4598185-5054.jpg
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];$catalogVersion;folder(qualifier)[default=images]
+;1200Wx1200H;/1200Wx1200H//3881074-7355.jpg;$siteResource/images/1200Wx1200H/3881074-7355.jpg
+;300Wx300H;/300Wx300H//3881074-7355.jpg;$siteResource/images/300Wx300H//3881074-7355.jpg
+;96Wx96H;/96Wx96H//3881074-7355.jpg;$siteResource/images/96Wx96H//3881074-7355.jpg
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];$catalogVersion;folder(qualifier)[default=images]
+;1200Wx1200H;/1200Wx1200H//3887123-4821.jpg;$siteResource/images/1200Wx1200H/3887123-4821.jpg
+;300Wx300H;/300Wx300H//3887123-4821.jpg;$siteResource/images/300Wx300H//3887123-4821.jpg
+;96Wx96H;/96Wx96H//3887123-4821.jpg;$siteResource/images/96Wx96H//3887123-4821.jpg
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];$catalogVersion;folder(qualifier)[default=images]
+;1200Wx1200H;/1200Wx1200H//3881076-4421.jpg;$siteResource/images/1200Wx1200H/3881076-4421.jpg
+;300Wx300H;/300Wx300H//3881076-4421.jpg;$siteResource/images/300Wx300H//3881076-4421.jpg
+;96Wx96H;/96Wx96H//3881076-4421.jpg;$siteResource/images/96Wx96H//3881076-4421.jpg
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];$catalogVersion;folder(qualifier)[default=images]
+;1200Wx1200H;/1200Wx1200H//3881338-5875.jpg;$siteResource/images/1200Wx1200H/3881338-5875.jpg
+;300Wx300H;/300Wx300H//3881338-5875.jpg;$siteResource/images/300Wx300H//3881338-5875.jpg
+;96Wx96H;/96Wx96H//3881338-5875.jpg;$siteResource/images/96Wx96H//3881338-5875.jpg
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];$catalogVersion;folder(qualifier)[default=images]
+;1200Wx1200H;/1200Wx1200H//3881339-1531.jpg;$siteResource/images/1200Wx1200H/3881339-1531.jpg
+;300Wx300H;/300Wx300H//3881339-1531.jpg;$siteResource/images/300Wx300H//3881339-1531.jpg
+;96Wx96H;/96Wx96H//3881339-1531.jpg;$siteResource/images/96Wx96H//3881339-1531.jpg
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];$catalogVersion;folder(qualifier)[default=images]
+;1200Wx1200H;/1200Wx1200H//4567188-4725.jpg;$siteResource/images/1200Wx1200H/4567188-4725.jpg
+;300Wx300H;/300Wx300H//4567188-4725.jpg;$siteResource/images/300Wx300H//4567188-4725.jpg
+;96Wx96H;/96Wx96H//4567188-4725.jpg;$siteResource/images/96Wx96H//4567188-4725.jpg
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];$catalogVersion;folder(qualifier)[default=images]
+;1200Wx1200H;/1200Wx1200H//4600658-3479.jpg;$siteResource/images/1200Wx1200H/4600658-3479.jpg
+;300Wx300H;/300Wx300H//4600658-3479.jpg;$siteResource/images/300Wx300H//4600658-3479.jpg
+;96Wx96H;/96Wx96H//4600658-3479.jpg;$siteResource/images/96Wx96H//4600658-3479.jpg
+

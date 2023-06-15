@@ -1,0 +1,23 @@
+1) 4567133-4298
+   Wall Connector
+
+2) 4567173-3460
+   Cable Organizer
+
+3) 4567174-7640
+   Mobile Connector
+
+4) 4567175-5385
+   Corded Mobile Connector
+
+5) 4567177-3349
+   SAE J1772 Charging Adapter
+
+6) 2116283-8661
+   Wall Connector Fastener Kit
+
+7) 2116266-4416
+   Gen 2 NEMA Adapters
+
+8) 2116274-6708
+   NEMA Adapter Bundle

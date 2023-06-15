@@ -1,0 +1,48 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+#PRODUCTS
+
+# Macros / Replacement Parameter definitions
+$productCatalog=powertoolsProductCatalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$supercategories=supercategories(code, $catalogVersion)
+$baseProduct=baseProduct(code,$catalogVersion)
+$approved=approvalstatus(code)[default='approved']
+
+# Language
+$lang=en
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 2217258           ; Ski/Snowboard Carrier for Hitch Rack          ; Conveniently stow your skis and snowboards on the exterior of your Model X/Y. The Model X/Y Ski/Snowboard Carrier is easily assembled and allows for lockable storage with soft rubber coated arms that secure equipment without the risk of scratching ski or snowboard surfaces.  ; Ski/Snowboard Carrier for Hitch Rack     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 4567173           ; Cable Organizer ; Store your Corded Mobile Connector with the newly redesigned Cable Organizer. This product features a sturdy bracket to keep your cables neatly stowed and a chassis holder to reduce additional wear and tear on your adaptor and outlet.  ; Cable Organizer     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 4567174           ; Mobile Connector          ; Stay charged on extended trips or when you need it most with Mobile Connector. Using a standard outlet, you can recharge up to 3 miles of range per hour with the NEMA 5-15 Adapter or up to 30 miles of range with the NEMA 14-50 Adapter depending on your vehicle.  ; Mobile Connector     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 4567175           ; Corded Mobile Connector          ; The Corded Mobile Connector features a NEMA 14-50 plug and improved charging speeds in comparison to the Mobile Connector with NEMA 5-15 Adapter.   ; Corded Mobile Connector     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 2116283           ; Wall Connector Fastener Kit          ; Replace a lost screw or keep a full set on hand with the Wall Connector Fastener Kit. Stay charged at home and keep the Gen 3 Wall Connector safely mounted with replacement screws only available from Tesla.  ; Wall Connector Fastener Kit     ; approved
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 2116266           ; Gen 2 NEMA Adapters          ; Use a variety of household outlets to charge your Tesla with a Gen 2 NEMA Adapter. Simply attach the appropriate adapter to your Mobile Connector, plug into the corresponding outlet and begin charging.  ; Gen 2 NEMA Adapters     ; approved
+
+
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 2116274           ; NEMA Adapter Bundle          ; Maximize your charging options with the NEMA Adapter Bundle. Simply attach the appropriate adapter to your Mobile Connector, plug into the corresponding outlet and begin charging. With all seven Gen 2 NEMA Adapters in one convenient storage bag, you can charge at any available outlet, at home or on the road.  ; NEMA Adapter Bundle     ; approved

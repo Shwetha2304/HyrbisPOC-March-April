@@ -1,0 +1,53 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+#PRODUCTS
+
+# Macros / Replacement Parameter definitions
+$productCatalog=powertoolsProductCatalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$supercategories=supercategories(code, $catalogVersion)
+$baseProduct=baseProduct(code,$catalogVersion)
+$approved=approvalstatus(code)[default='approved']
+
+# Language
+$lang=en
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                     ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 3880596           ; Pet Liner                                            ; Model S/3/Y Pet Liner is made from a breathable quilted fleece material, creating maximum comfort for your pet during car rides or while relaxing in Dog Mode. Designed exclusively for the second row of Model S, Model 3 and Model Y, the three-piece set features a durable water-resistant hammock-style liner and two door protectors to safeguard against paws, dirt, pet hair and any accidental slobber.      ; Pet Liner     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                     ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 3857734          ; Panoramic Roof Sunshades                                          ; Constructed of lightweight mesh fabric with a collapsible rigid frame, the Panoramic Roof Sunshades block 66% of luminous transmittance without compromising rearward visibility. Easily removable, the sunshades are installed onto the interior of the front and rear panoramic roof windows. When removed, the shades collapse and store in an 18-inch square pouch.      ; Panoramic Roof Sunshades      ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                     ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 3857733           ; Illuminated Door Sills                                            ; Add a premium touch to your Tesla by accentuating your vehicle's model name with Model S Illuminated Door Sills. This elegant addition requires no additional wiring to your vehicle's electrical system. Each sill is activated by a magnetic switch and powered by a long-lasting battery with LEDs for seamless installation.      ; Illuminated Door Sills     ; approved
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                     ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 3887121           ; Steering Wheel Retrofit                                            ; Travel in luxury. Enjoy the warmth of a heated wheel and the touch of premium vegan leather in a traditional form factor. No stalks or shifters.      ; Steering Wheel Retrofit     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                 ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 3887123          ; All-Weather Interior Liners                      ; Model S All-Weather Interior Liners are made from a thermoplastic elastomer material with a strong rigid core for extreme-duty protection and spatial coverage. Unlike traditional floor mats, Model S All-Weather Interior Liners are comprised of vertical walls that offer maximum protection to the footwell carpet and easy cleanup. Created with an exclusive pattern by Tesla Design Studio, these liners are custom-made using the latest digital measurements for Model S.100% recyclable and free of cadmium, lead, latex and PVC.      ; All-Weather Interior Liners     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                                                          ; summary 	             ; $approved             ; $catalogVersion
+                                   ; 3881063           ; Model S/X Coat Hooks                          ; Tesla Coat Hooks attach onto first row seatbacks with a simple snap system.      ; Model S/X Coat Hooks     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                     ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 3881043           ; Carbon Fiber Spoiler                                            ;Improve high-speed stability by adding the Model S Carbon Fiber Spoiler to your liftgate. Made from lightweight, cross-woven carbon fiber with a matte epoxy finish.      ;Carbon Fiber Spoiler     ; approved
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                     ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 3881066           ; Air Filter                                            ; Replace your Model S or Model X cabin air filter to prevent pollen, industrial fallout, road dust and other particles from entering the cabin through the vents. Tesla recommends replacing this filter every two years.      ; Air Filter     ; approved
+
+

@@ -1,0 +1,50 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+#PRODUCTS
+
+# Macros / Replacement Parameter definitions
+$productCatalog=powertoolsProductCatalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$supercategories=supercategories(code, $catalogVersion)
+$baseProduct=baseProduct(code,$catalogVersion)
+$approved=approvalstatus(code)[default='approved']
+
+# Language
+$lang=en
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 4598185        ; Enhanced Anti-Theft Upgrade                    ;Increase your vehicle's protection with active sensor technology designed to detect motion inside the cabin as well as sense if the vehicle is moved or tilted. It will warn against potential theft with an audible alarm.  ; Enhanced Anti-Theft Upgrade     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                     ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 3881074           ; Model X/Y Hitch Rack                                 ; Designed exclusively for Tesla, the Model X/Y Hitch Rack is a premium tilt-down hitch rack that comes fully assembled out of the box. Installation is a breeze with the AutoPin™ and locking SpeedKnob™. New ZipStrips™ make loading and securing bikes simpler than ever. Padded arms cradle your bike's frame and can be folded down when not in use. Need to access the rear of your Model X/Y? Simply tilt the rack down with the conveniently located UpperHand™ lever. An integrated, same key security system locks your bikes and rack in place.     ; Model X/Y Hitch Rack     ; approved
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 3887123           ; All-Weather Interior Liners                     ; Model X All-Weather Interior Liners are made from thermoplastic elastomer material for ultimate protection and spatial coverage. Unlike traditional floor mats, Model X All-Weather Interior Liners are comprised of vertical walls that ensure maximum protection to the interior carpet and easy cleanup.100% recyclable and free of cadmium, lead, latex and PVC.    ; All-Weather Interior Liners     ; approved
+
+Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 3881076           ; Falcon Wing Sunshades                     ; Constructed of lightweight mesh fabric with a collapsible rigid frame, the Model X Falcon Wing Roof Sunshades block 66% of luminous transmittance without compromising rearward visibility. Easily removable, the sunshades are installed onto the interior of the roof windows. When removed, the shades can be stored in the provided storage pouch.   ; Falcon Wing Sunshades     ; approved
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 3881338          ; Rear Liftgate Sunshade                     ;Constructed of lightweight mesh fabric with a collapsible rigid frame, the Model X Rear Liftgate Sunshade blocks 66% of luminous transmittance without compromising rearward visibility. Easily removable, the sunshade is installed onto the interior of the rear liftgate window. When removed, the shade collapses and stores in the provided pouch.  ; Rear Liftgate Sunshade     ; approved
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 3881339         ; Performance Pedal Set                     ;Enhance the style and appearance of your standard Model S or Model X with the Performance Pedal Set. Constructed of aluminum alloy with raised rubber sectioning, this set includes pedals for the accelerator and brake.  ; Performance Pedal Set     ; approved
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 4567188         ; Solid State Drive                    ;Store everything. From Tesla Arcade games to Dashcam footage, our 1 TB Solid State Drive (SSD) allows you to save all your vehicle data in one place. This automotive-grade external SSD is designed for durability withstanding extreme cabin temperatures, vehicle shocks and vibrations. With an extended lifespan compared to similar storage devices and read/write speeds optimized for gaming, the Solid State Drive supports Steam gaming.  ; Solid State Drive     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                                ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 4600658        ; Cargo Net                    ;Secure your cargo and enhance your utility capabilities with Model X Cargo Net. The stretchable elastic netting will safely protect fragile items or more secure cargo like sports equipment or luggage.  ; Cargo Net      ; approved
+
+

@@ -1,0 +1,13 @@
+$contentCatalog=powertoolsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+$picture=media(code, $contentCV);
+$siteResource=jar:de.hybris.platform.powertoolsstore.constants.PowertoolsStoreConstants&/powertoolsstore/import/sampledata/contentCatalogs/$contentCatalog
+$medias=medias(code, $contentCV);
+$mediaContainer=media(qualifier, $contentCV)[lang=$lang];
+
+
+# Language
+$lang=en
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];realfilename;altText;mime[default='image/jpeg'];$contentCV[unique=true];folder(qualifier)[default=images];
+;widescreen;Powertools_1400x480_BigSplash_EN_01_1400W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_1400x480_BigSplash_EN_01_1400W.jpg;Powertools_1400x480_BigSplash_EN_01_1400W.jpg;"The Most Powerful Tools in their Price Range";

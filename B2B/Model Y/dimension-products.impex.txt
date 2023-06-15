@@ -1,0 +1,55 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+#PRODUCTS
+
+# Macros / Replacement Parameter definitions
+$productCatalog=powertoolsProductCatalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$supercategories=supercategories(code, $catalogVersion)
+$baseProduct=baseProduct(code,$catalogVersion)
+$approved=approvalstatus(code)[default='approved']
+
+# Language
+$lang=en
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 2217258           ; Ski/Snowboard Carrier for Hitch Rack          ; Conveniently stow your skis and snowboards on the exterior of your Model X/Y. The Model X/Y Ski/Snowboard Carrier is easily assembled and allows for lockable storage with soft rubber coated arms that secure equipment without the risk of scratching ski or snowboard surfaces.  ; Ski/Snowboard Carrier for Hitch Rack     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 1128763          ; Car Cover          ; Shield your Tesla from the harshest of elements with this Outdoor Car Cover. With a middle layer of Thermoplastic Polyurethane and two outer layers of woven polyester, the cover allows for breathability while providing the best water resistance available today. Convenient charge port openings allow for connection to an outlet, and ventilated mesh allow for air flow while charging.  ; Car Cover     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 693923           ; License Plate Frame          ; Complete the look of your Model Y and protect your license plate from the elements. The Model Y License Plate Frame is constructed from stainless steel with a premium satin black finish and features a laser-etched "Model Y" wordmark.The frame includes tabs that tuck behind your license plate for a minimal aesthetic and more secure hold.  ; License Plate Frame     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 1128762           ; Tire Repair Kit          ;   The Tire Repair Kit contains an air compressor to regularly top off your tire pressure and a one-piece sealant canister to patch punctures. Simply attach the transparent hose to the tire valve and connect the plug to your vehicle's 12V outlet to begin repairing the hole and filling the tire. The SENSOR safety system will electronically check for a secure connection between the hose and valve to prevent accidental misuse.; Tire Repair Kit     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 2222485           ; Tire Repair Sealant          ; For use specifically with the Tesla Tire Repair Kit, this sealant is a replacement for when the sealant included with the tire repair kit has been used or reaches its expiration date. ; Tire Repair Sealant     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 1979039           ; Wheel Locks          ;  Protect your Tesla Wheels with a specially-designed lock set. Forged steel construction and different key patterns provide maximum security.The kit is easy to use and functions like regular lug nuts do. The kit includes a special tool for installation and removal. ; Wheel Locks     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 2221933           ; Wiper Blade          ; To ensure maximum performance, correct fitment and visual clarity, replace your Model Y wiper blades with genuine replacements.  ; Wiper Blade     ; approved
+
+
+#Update product description
+UPDATE Product                     ; code[unique=true] ; name[lang=$lang]                              ; description[lang=$lang]                              ; summary 											   ; $approved             ; $catalogVersion
+                                   ; 3803058           ; Trunk Storage Bins          ; Model Y Trunk Storage Bins help keep your trunk organized and clean. The waterproof rubber bins slip into the left and right trunk pockets allowing you to stow shoes, tools, gear and other items that might otherwise dirty your trunk's interior. The matching carpeted lids blend seamlessly into the trunk for expanded floor space and cargo area.  ; Trunk Storage Bins     ; approved
+
+

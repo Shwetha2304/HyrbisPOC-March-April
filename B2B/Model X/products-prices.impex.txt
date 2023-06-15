@@ -1,0 +1,37 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+# ImpEx for Importing Powertools Store Prices
+#% impex.setLocale( Locale.GERMAN ); 
+
+$productCatalog=powertoolsProductCatalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default='$productCatalog:Staged']
+$prices=Europe1prices[translator=de.hybris.platform.europe1.jalo.impex.Europe1PricesTranslator]
+$taxGroup=Europe1PriceFactory_PTG(code)[default=us-sales-tax-full]
+
+# Set product approval status to Approved only for those products that have prices.
+$approved=approvalstatus(code)[default='approved']
+
+UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;$taxGroup
+;4598185;1 pieces = 350 USD N
+
+UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;$taxGroup
+;3881074;1 pieces = 540 USD N
+
+UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;$taxGroup
+;3887123;1 pieces = 325 USD N
+
+UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;$taxGroup
+;3881076;1 pieces = 80 USD N
+
+UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;$taxGroup
+;3881338;1 pieces = 80 USD N
+
+UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;$taxGroup
+;3881339;1 pieces = 150 USD N
+
+UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;$taxGroup
+;4567188;1 pieces = 350 USD N
+
+UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;$taxGroup
+;4600658;1 pieces = 50 USD N
